@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-      ORG               = 'dominicgunn'
-      APP_NAME          = 'demo'
+      ORG               = 'cb-kubecd'
+      APP_NAME          = 'jx-demo'
       CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
     }
     stages {
@@ -39,7 +39,7 @@ pipeline {
         }
         steps {
 
-            git 'https://github.com/dominicgunn/demo.git'
+            git 'https://github.com/cb-kubecd/jx-demo.git'
 
             sh "git config --global credential.helper store"
             sh "jx step validate --min-jx-version 1.1.73"
@@ -48,7 +48,7 @@ pipeline {
             sh "echo \$(jx-release-version) > VERSION"
             sh "mvn versions:set -DnewVersion=\$(cat VERSION)"
 
-            dir ('./charts/demo') {
+            dir ('./charts/jx-demo') {
               sh "make tag"
             }
 
@@ -65,7 +65,7 @@ pipeline {
           branch 'master'
         }
         steps {
-          dir ('./charts/demo') {
+          dir ('./charts/jx-demo') {
               sh 'jx step changelog --version v\$(cat ../../VERSION)'
               // release the helm chart
               sh 'make release'
