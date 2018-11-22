@@ -57,11 +57,28 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M1</version>
-                <configuration>
-                    <!--<argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>-->
-                </configuration>
             </plugin>
-
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.2</version>
+                <executions>
+                    <!-- Prepares a property pointing to the JaCoCo runtime agent that can be passed as a VM argument to the application under test. -->
+                    <execution>
+                        <id>default-prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                    <!--Creates a code coverage report for tests of a single project in multiple formats (HTML, XML, and CSV).-->
+                        <id>default-report</id>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 

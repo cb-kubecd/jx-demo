@@ -4,3 +4,8 @@ extensions:
   parameters:
   - name: provider
     value: github
+- name: jacoco-maven-publish
+  namespace: jx
+  parameters:
+  - name: provider
+    value: github
