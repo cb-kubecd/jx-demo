@@ -4,7 +4,6 @@ pipeline {
       ORG               = 'cb-kubecd'
       APP_NAME          = 'jx-demo'
       CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
-      BUILD_NUMBER      = "$BUILD_ID"
     }
     stages {
       stage('CI Build and push snapshot') {
@@ -12,7 +11,7 @@ pipeline {
           branch 'PR-*'
         }
         environment {
-          PREVIEW_VERSION = "0.0.0-SNAPSHOT-$BRANCH_NAME-$BUILD_NUMBER"
+          PREVIEW_VERSION = "0.0.0-SNAPSHOT-$BRANCH_NAME-$BUILD_ID"
           PREVIEW_NAMESPACE = "$APP_NAME-$BRANCH_NAME".toLowerCase()
           HELM_RELEASE = "$PREVIEW_NAMESPACE".toLowerCase()
         }
