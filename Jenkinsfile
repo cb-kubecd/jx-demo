@@ -4,6 +4,7 @@ pipeline {
       ORG               = 'cb-kubecd'
       APP_NAME          = 'jx-demo'
       CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
+      MAVEN_OPTS        = '-Dorg.slf4j.simpleLogger.log.org.apache.maven.cli.transfer.Slf4jMavenTransferListener=warn -B'
     }
     stages {
       stage('CI Build and push snapshot') {
@@ -16,7 +17,8 @@ pipeline {
           HELM_RELEASE = "$PREVIEW_NAMESPACE".toLowerCase()
         }
         steps {
-          sh "env"
+          sh "echo BUILD_ID=$BUILD_ID"
+          sh "echo BUILD_NUMBER=$BUILD_NUMBER"
           sh "git config --global credential.helper store"
           sh "jx step validate --min-jx-version 1.1.73"
           sh "jx step git credentials"
