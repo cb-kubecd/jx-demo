@@ -4,6 +4,7 @@ pipeline {
       ORG               = 'cb-kubecd'
       APP_NAME          = 'jx-demo'
       CHARTMUSEUM_CREDS = credentials('jenkins-x-chartmuseum')
+      BUILD_NUMBER      = "$BUILD_ID"
     }
     stages {
       stage('CI Build and push snapshot') {
