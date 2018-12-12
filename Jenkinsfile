@@ -16,6 +16,7 @@ pipeline {
           HELM_RELEASE = "$PREVIEW_NAMESPACE".toLowerCase()
         }
         steps {
+          sh "env"
           sh "git config --global credential.helper store"
           sh "jx step validate --min-jx-version 1.1.73"
           sh "jx step git credentials"
