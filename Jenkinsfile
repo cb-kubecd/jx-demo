@@ -17,8 +17,6 @@ pipeline {
           HELM_RELEASE = "$PREVIEW_NAMESPACE".toLowerCase()
         }
         steps {
-          sh "echo BUILD_ID=$BUILD_ID"
-          sh "echo BUILD_NUMBER=$BUILD_NUMBER"
           sh "git config --global credential.helper store"
           sh "jx step validate --min-jx-version 1.1.73"
           sh "jx step git credentials"
