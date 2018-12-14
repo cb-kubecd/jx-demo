@@ -13,4 +13,8 @@ public class DemoApplicationTests {
 	public void contextLoads() {
 	}
 
+	@Test
+	public void circumference() {
+		assert DemoApplication.circumference(1) > 0;
+	}
 }
