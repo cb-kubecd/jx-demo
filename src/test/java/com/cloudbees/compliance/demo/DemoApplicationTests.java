@@ -15,6 +15,7 @@ public class DemoApplicationTests {
 
 	@Test
 	public void circumference() {
+
 		assert DemoApplication.circumference(1) > 0;
 	}
 }
