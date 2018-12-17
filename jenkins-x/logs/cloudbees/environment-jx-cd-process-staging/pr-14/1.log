@@ -1,0 +1,25 @@
+Step: build-step-credential-initializer:
+
+Step: build-step-git-source:
+
+Step: build-step-unnamed-2:
+
+Generated Git credentials file /home/jenkins/git/credentials
+Note: checking out '3ed96d9296f19f1f52b462b5caafd608496a0de8'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at 3ed96d9... Promote jx-demo to version 0.0.16
+Switched to a new branch 'pr'
+Using helmBinary helm with feature flag: none
+Adding missing Helm repo: jenkins-x https://chartmuseum.build.cd.jenkins-x.io
+Successfully added Helm repository jenkins-x.
+Adding missing Helm repo: releases http://jenkins-x-chartmuseum:8080
+Successfully added Helm repository releases.
