@@ -82,7 +82,7 @@ pipeline {
     }
     post {
         always {
-            sh 'jx step post run'
+            sh 'jx step post run 2>&1'
         }
     }
 }
