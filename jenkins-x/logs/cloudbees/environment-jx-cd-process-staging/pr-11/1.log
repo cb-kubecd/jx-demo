@@ -1,0 +1,23 @@
+Step: build-step-credential-initializer:
+
+Step: build-step-git-source:
+
+Step: build-step-unnamed-2:
+
+Generated Git credentials file /home/jenkins/git/credentials
+Note: checking out 'a855eda7ad8ac1f31881047ef1136aca6127b954'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by performing another checkout.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -b with the checkout command again. Example:
+
+  git checkout -b <new-branch-name>
+
+HEAD is now at a855eda... Promote jx-demo to version 0.0.11
+Switched to a new branch 'pr'
+Using helmBinary helm with feature flag: none
+error: failed to read the Helm version: failed to run 'helm version --short' command in directory 'environment-jx-cd-process-staging/env', output: 'Client: v2.10.0+g9ad53aa
+Error: pods is forbidden: User "system:serviceaccount:jx:knative-build-bot" cannot list pods in the namespace "kube-system"': exit status 1
