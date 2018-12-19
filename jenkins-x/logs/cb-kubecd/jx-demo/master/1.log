@@ -5,7 +5,7 @@ Step: build-step-git-source:
 Step: build-step-jenkins:
 
 Picked up _JAVA_OPTIONS: -Xmx400m
-  12.515 [id=21]	SEVERE	c.c.j.p.k.KubernetesCredentialProvider#startWatchingForSecrets: Failed to initialise k8s secret provider, secrets from Kubernetes will not be available
+  11.633 [id=26]	SEVERE	c.c.j.p.k.KubernetesCredentialProvider#startWatchingForSecrets: Failed to initialise k8s secret provider, secrets from Kubernetes will not be available
 io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/api/v1/namespaces/jx/secrets?labelSelector=jenkins.io/credentials-type. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. secrets is forbidden: User "system:serviceaccount:jx:helm" cannot list secrets in the namespace "jx".
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.requestFailure(OperationSupport.java:470)
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.assertResponseCode(OperationSupport.java:407)
@@ -30,8 +30,8 @@ io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET a
 	at java.lang.Thread.run(Thread.java:748)
 Started
 Running in Durability level: PERFORMANCE_OPTIMIZED
-  15.152 [id=38]	WARNING	i.f.k.c.i.VersionUsageUtils#alert: The client is using resource type 'customresourcedefinitions' with unstable version 'v1beta1'
-  15.521 [id=38]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@548040ee failed
+  13.972 [id=15]	WARNING	i.f.k.c.i.VersionUsageUtils#alert: The client is using resource type 'customresourcedefinitions' with unstable version 'v1beta1'
+  14.410 [id=15]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@467caf96 failed
 io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. customresourcedefinitions.apiextensions.k8s.io is forbidden: User "system:serviceaccount:jx:helm" cannot list customresourcedefinitions.apiextensions.k8s.io at the cluster scope.
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.requestFailure(OperationSupport.java:472)
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.assertResponseCode(OperationSupport.java:409)
@@ -54,7 +54,7 @@ io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET a
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-  15.635 [id=39]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@548040ee failed
+  14.497 [id=42]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@467caf96 failed
 io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. customresourcedefinitions.apiextensions.k8s.io is forbidden: User "system:serviceaccount:jx:helm" cannot list customresourcedefinitions.apiextensions.k8s.io at the cluster scope.
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.requestFailure(OperationSupport.java:472)
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.assertResponseCode(OperationSupport.java:409)
@@ -77,7 +77,7 @@ io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET a
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-  16.633 [id=34]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@548040ee failed
+  15.488 [id=37]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@467caf96 failed
 io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. customresourcedefinitions.apiextensions.k8s.io is forbidden: User "system:serviceaccount:jx:helm" cannot list customresourcedefinitions.apiextensions.k8s.io at the cluster scope.
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.requestFailure(OperationSupport.java:472)
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.assertResponseCode(OperationSupport.java:409)
@@ -100,7 +100,7 @@ io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET a
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-  17.638 [id=15]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@548040ee failed
+  16.506 [id=38]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@467caf96 failed
 io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. customresourcedefinitions.apiextensions.k8s.io is forbidden: User "system:serviceaccount:jx:helm" cannot list customresourcedefinitions.apiextensions.k8s.io at the cluster scope.
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.requestFailure(OperationSupport.java:472)
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.assertResponseCode(OperationSupport.java:409)
@@ -123,7 +123,7 @@ io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET a
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-  18.631 [id=38]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@548040ee failed
+  17.536 [id=15]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@467caf96 failed
 io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. customresourcedefinitions.apiextensions.k8s.io is forbidden: User "system:serviceaccount:jx:helm" cannot list customresourcedefinitions.apiextensions.k8s.io at the cluster scope.
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.requestFailure(OperationSupport.java:472)
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.assertResponseCode(OperationSupport.java:409)
@@ -146,7 +146,7 @@ io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET a
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-  19.631 [id=39]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@548040ee failed
+  18.477 [id=39]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@467caf96 failed
 io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. customresourcedefinitions.apiextensions.k8s.io is forbidden: User "system:serviceaccount:jx:helm" cannot list customresourcedefinitions.apiextensions.k8s.io at the cluster scope.
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.requestFailure(OperationSupport.java:472)
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.assertResponseCode(OperationSupport.java:409)
@@ -170,8 +170,8 @@ io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET a
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
 [Pipeline] node
-Running on Jenkins in /tmp/jenkinsTests.tmp/jenkins2367860866395239691test/workspace/job
-  20.635 [id=34]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@548040ee failed
+Running on Jenkins in /tmp/jenkinsTests.tmp/jenkins7815494709123235227test/workspace/job
+  19.478 [id=34]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@467caf96 failed
 io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. customresourcedefinitions.apiextensions.k8s.io is forbidden: User "system:serviceaccount:jx:helm" cannot list customresourcedefinitions.apiextensions.k8s.io at the cluster scope.
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.requestFailure(OperationSupport.java:472)
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.assertResponseCode(OperationSupport.java:409)
@@ -194,7 +194,7 @@ io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET a
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-  20.908 [id=49]	WARNING	o.j.plugins.workflow.cps.DSL#invokeStep: Error storing the arguments for step: checkout
+  19.774 [id=49]	WARNING	o.j.plugins.workflow.cps.DSL#invokeStep: Error storing the arguments for step: checkout
 org.kohsuke.stapler.NoStaplerConstructorException: There's no @DataBoundConstructor on any constructor of class io.jenkins.jenkinsfile.runner.FileSystemSCM
 	at org.kohsuke.stapler.ClassDescriptor.loadConstructorParamNames(ClassDescriptor.java:265)
 	at org.jenkinsci.plugins.structs.describable.DescribableModel.<init>(DescribableModel.java:144)
@@ -212,14 +212,14 @@ org.kohsuke.stapler.NoStaplerConstructorException: There's no @DataBoundConstruc
 	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)
 	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)
 	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)
-	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
 	at com.cloudbees.groovy.cps.impl.PropertyishBlock$ContinuationImpl.get(PropertyishBlock.java:76)
 	at com.cloudbees.groovy.cps.LValueBlock$GetAdapter.receive(LValueBlock.java:30)
 	at com.cloudbees.groovy.cps.impl.PropertyishBlock$ContinuationImpl.fixName(PropertyishBlock.java:66)
-	at sun.reflect.GeneratedMethodAccessor86.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
@@ -262,7 +262,7 @@ org.kohsuke.stapler.NoStaplerConstructorException: There's no @DataBoundConstruc
 [Pipeline] sh
 Required context class hudson.FilePath is missing
 Perhaps you forgot to surround the code with a step that provides this, such as: node
-  21.657 [id=36]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@548040ee failed
+  20.500 [id=15]	SEVERE	hudson.triggers.SafeTimerTask#run: Timer task org.jenkinsci.plugins.jx.resources.BuildSyncRunListener$1@467caf96 failed
 io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. customresourcedefinitions.apiextensions.k8s.io is forbidden: User "system:serviceaccount:jx:helm" cannot list customresourcedefinitions.apiextensions.k8s.io at the cluster scope.
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.requestFailure(OperationSupport.java:472)
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.assertResponseCode(OperationSupport.java:409)
@@ -285,7 +285,7 @@ io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET a
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-  21.923 [id=49]	WARNING	h.model.listeners.RunListener#report: RunListener failed
+  20.739 [id=80]	WARNING	h.model.listeners.RunListener#report: RunListener failed
 io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. customresourcedefinitions.apiextensions.k8s.io is forbidden: User "system:serviceaccount:jx:helm" cannot list customresourcedefinitions.apiextensions.k8s.io at the cluster scope.
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.requestFailure(OperationSupport.java:472)
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.assertResponseCode(OperationSupport.java:409)
@@ -313,7 +313,7 @@ io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET a
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-  21.934 [id=49]	WARNING	h.model.listeners.RunListener#report: RunListener failed
+  20.766 [id=80]	WARNING	h.model.listeners.RunListener#report: RunListener failed
 io.fabric8.kubernetes.client.KubernetesClientException: Failure executing: GET at: https://kubernetes.default.svc/apis/apiextensions.k8s.io/v1beta1/customresourcedefinitions. Message: Forbidden!Configured service account doesn't have access. Service account may have been revoked. customresourcedefinitions.apiextensions.k8s.io is forbidden: User "system:serviceaccount:jx:helm" cannot list customresourcedefinitions.apiextensions.k8s.io at the cluster scope.
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.requestFailure(OperationSupport.java:472)
 	at io.fabric8.kubernetes.client.dsl.base.OperationSupport.assertResponseCode(OperationSupport.java:409)
@@ -381,7 +381,7 @@ org.jenkinsci.plugins.workflow.steps.MissingContextVariableException: Required c
 	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)
 	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)
 	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)
-	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
@@ -435,14 +435,14 @@ org.jenkinsci.plugins.credentialsbinding.impl.CredentialNotFoundException: jenki
 	at com.cloudbees.groovy.cps.impl.ContinuationGroup.methodCall(ContinuationGroup.java:57)
 	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.dispatchOrArg(FunctionCallBlock.java:109)
 	at com.cloudbees.groovy.cps.impl.FunctionCallBlock$ContinuationImpl.fixArg(FunctionCallBlock.java:82)
-	at sun.reflect.GeneratedMethodAccessor81.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor82.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
 	at com.cloudbees.groovy.cps.impl.PropertyishBlock$ContinuationImpl.get(PropertyishBlock.java:76)
 	at com.cloudbees.groovy.cps.LValueBlock$GetAdapter.receive(LValueBlock.java:30)
 	at com.cloudbees.groovy.cps.impl.PropertyishBlock$ContinuationImpl.fixName(PropertyishBlock.java:66)
-	at sun.reflect.GeneratedMethodAccessor86.invoke(Unknown Source)
+	at sun.reflect.GeneratedMethodAccessor87.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 	at java.lang.reflect.Method.invoke(Method.java:498)
 	at com.cloudbees.groovy.cps.impl.ContinuationPtr$ContinuationImpl.receive(ContinuationPtr.java:72)
